@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
-type Users = {
-    id:number
+type users = {
+    id:number,
     name:string
 
 }
-
 
 
 const Users = () => {
@@ -28,7 +27,7 @@ const Users = () => {
     <div>Users list</div>
     <ul>
 
-        {users && users.map((users, index)  => 
+        {users && users.map((users:users, index:number)  => 
         <li key={`users-${index}`}>{ users.name }</li>)}
     </ul>
     </>

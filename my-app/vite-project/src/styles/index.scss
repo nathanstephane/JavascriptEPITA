@@ -1,0 +1,18 @@
+@import "_var.scss";
+
+$with-container: '80%';
+$primary-color: "aqua";
+$secondary-color: "brown";
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.container{
+  width: $with-container;
+  margin: 20px auto;
+ 
+}
