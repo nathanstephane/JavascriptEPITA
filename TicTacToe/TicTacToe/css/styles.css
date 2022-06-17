@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.players {
+    padding-top: 20px;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid red;*/
+}
+
+.players .player {
+    /*border: 1px solid black;*/
+    width: 45%;
+    text-align: center;
+}
+
+.players .player .image img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.players .player .name {
+    font-size: 40px;
+}
+
+.players .player .score {
+    font-size: 70px;
+}
+
+#msg {
+    border: 1px solid green;
+    background-color: greenyellow;
+    color: green;
+    text-align: center;
+    width: 50%;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    display: none;
+    /*visibility: hidden;*/
+}
+
+.grid {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid .cell {
+    display: flex;
+    border: 1px solid grey;
+    text-align: center;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid .cell:hover {
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: paleturquoise;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}

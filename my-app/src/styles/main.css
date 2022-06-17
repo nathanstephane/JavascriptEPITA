@@ -1,0 +1,14 @@
+*{
+    padding-left: 2px;
+}
+
+#nav{
+    background-color: grey;
+    display: flex;
+}
+
+#nav a{
+    margin: 10px;
+    display: block;
+    padding: 10px;
+}

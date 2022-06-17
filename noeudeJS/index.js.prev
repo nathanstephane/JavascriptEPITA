@@ -1,0 +1,21 @@
+const { response } = require('express')
+const express = require('express')
+//let bodyParser = require('body-parser')
+const todoRouter = require('./routes/todo')
+const app = express()
+
+//note--TO CREATE WE SEND POST, TO UPDATE WE USE PUT OR PATCH //
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({extended: true}));
+
+app.use(express.json())
+app.get('/', (request, response)=>{
+    response.status(200).send('it works');
+})
+
+app.use('/todos', todoRouter)
+
+const PORT = 4500
+app.listen(PORT,()=>{
+    console.log(`Server is listening on http://localhost:${PORT}`)
+})
