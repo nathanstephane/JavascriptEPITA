@@ -4,6 +4,7 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 
 const todoRouter = require('./routes/todo')
+const messageRouter = require('./routes/message')
 
 const app = express()
 app.use(morgan('dev'))
@@ -34,6 +35,7 @@ return response.status(200).json(`My name is ${name}`)
 })
 
 app.use('/todos', todoRouter)
+app.use('/messages', messageRouter)
 
 const PORT = 4500
 
