@@ -4,14 +4,14 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 
 const todoRouter = require('./routes/todo')
-const messageRouter = require('./routes/message')
+const messageRouter = require('./routes/messageRoute')
 
 const app = express()
 app.use(morgan('dev'))
 app.use(express.json())
 
 try{
-     mongoose.connect('mongodb://localhost:27018/epita')
+     mongoose.connect('mongodb://root:example@127.0.0.1:27018/')
      console.log('Connected to DB')
 }catch (error){
     console.log("Error connection to DB: ",error)
