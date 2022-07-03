@@ -1,8 +1,19 @@
 @import "_var.scss";
+@import "_nav.scss";
+@import "_user.scss";
+@import "_form.scss";
 
 $with-container: '80%';
 $primary-color: "aqua";
 $secondary-color: "brown";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 body{
   margin: 0;

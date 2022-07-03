@@ -1,7 +1,11 @@
 const mongoose = require('mongoose')
 
-const Message = mongoose.model('Message', {
-    name: String
-})
-
+const messageSchema = new mongoose.Schema({
+    name: String}, {
+    timestamps: {
+        createdAt: 'created_at',
+        updatedAt: 'updated_at'
+    }
+    })
+    const Message = mongoose.model('Message', messageSchema)
 module.exports = Message
